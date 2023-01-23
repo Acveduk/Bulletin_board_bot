@@ -1,0 +1,17 @@
+version: "3.1"
+
+services:
+  byr:
+    container_name: byr
+    build:
+      context: .
+    command: python app.py
+    restart: always
+    networks:
+      - botnet
+    volumes:
+      - .:/src
+
+networks:
+  botnet:
+    driver: bridge

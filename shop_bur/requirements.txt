@@ -1,0 +1,5 @@
+aiogram
+asyncpg
+asyncio
+aiogram_media_group
+pyqiwip2p
